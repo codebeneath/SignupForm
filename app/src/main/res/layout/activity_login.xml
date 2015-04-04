@@ -5,6 +5,12 @@
     android:padding="16dp"
     tools:context=".LoginActivity">
 
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:text="@string/nonsense" />
+
     <LinearLayout
         android:id="@+id/form"
         android:orientation="vertical"
