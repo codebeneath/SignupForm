@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/form"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/userNameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:text="@string/userName" />
+            <EditText
+                android:id="@+id/userPrompt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/userName"
+                android:layout_weight="75"
+                android:text="@string/userPrompt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pwField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/pw"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:text="@string/pw" />
+            <EditText
+                android:id="@+id/pwPrompt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/pw"
+                android:layout_weight="75"
+                android:text="@string/pwPrompt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pwConfirmField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/pwConfirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:text="@string/pwConfirm" />
+            <EditText
+                android:id="@+id/pwConfirmPrompt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/pwConfirm"
+                android:layout_weight="75"
+                android:text="@string/pwConfirmPrompt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/form"
+        android:layout_below="@id/form"
+        android:text="@string/submit"
+        android:textSize="25sp" />
+</RelativeLayout>
